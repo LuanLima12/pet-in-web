@@ -1,0 +1,9 @@
+{
+
+    "name": "web/pet-in-web",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
