@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Checkout example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min2.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+
+<div class="background">  
+<div class="container">
+  <main>
+    <br><br><br>
+    <div class="corpo">
+    <!--div class="row g-3"-->
+      <div class="col-md-7 col-lg-8" id="principal">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-12">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="text" class="form-control" id="email" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                E-mail inserido está incorreto.
+              </div>
+            </div>
+
+            <div class="col-sm-12"><br></div>
+ 
+            <div class="col-sm-12">
+              <label for="password" class="form-label">Senha</label>
+              <div class="input-group has-validation">
+                <input type="password" class="form-control" id="senha" placeholder="" required>
+                <div class="invalid-feedback">
+                  Entre com uma senha válida.
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12"><br></div>
+
+            <div class="col-sm-8" id="S">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input"  onclick="mostrarOcultarSenha()" id="senha2">
+                <label class="form-check-label" for="same-address" id="exibirS">Exibir senha </label>
+                <a class="link" href="recuperarSenha.html"> Esqueceu a senha?</a>
+              </div>
+            </div>
+
+          <hr class="my-4">
+
+          <button class="w-90 btn btn-primary btn-lg" type="submit" onclick="verificarSenha()">Entrar</button>
+        </form>
+        <br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+  </main>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min2.js"></script>
+
+      <script src="form-validation.js"></script>
+</div> 
+  </body>
+</html>
